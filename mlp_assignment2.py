@@ -21,7 +21,7 @@ pipeline = Pipeline([                                      # create pipeline sta
 
 pipeline.fit(X_train, y_train)
 y_pred = pipeline.predict(X_test)
-mse = mean_squared_error(y_test, y_pred)
+mse = mean_squared_error(y_test, y_pred,squared=False)
 print(f'Mean Squared Error: {mse:.4f}')    # mean squARE error value.
 predict= pipeline.predict(X_test)
 print(predict)
